@@ -42,6 +42,7 @@ public class GalleryActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                //http://stackoverflow.com/questions/21084866/how-to-share-image-of-imageview/21095826
                 ImageView imageBeingSent = (ImageView) findViewById(R.id.imageView);
 
                 imageBeingSent.setDrawingCacheEnabled(true);
@@ -61,8 +62,9 @@ public class GalleryActivity extends AppCompatActivity {
 
                 Intent iShare = new Intent(Intent.ACTION_SEND);
                 iShare.setType("image/*");
+                //iShare.putExtra(Intent.EXTRA_TEXT, "Hello");
                 iShare.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(cachePath));
-                startActivity(Intent.createChooser(iShare, "Share image using"));
+                startActivity(Intent.createChooser(iShare, "Choose app to share photo with!"));
             }
         });
 

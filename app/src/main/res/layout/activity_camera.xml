@@ -11,25 +11,14 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.conorprunty.projectsnap.CameraActivity">
 
-    <ImageView
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        app:srcCompat="@mipmap/ic_launcher"
-        android:id="@+id/imageDisplay"
-        android:layout_centerVertical="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:contentDescription="" />
-
     <Button
-        android:text="Text CoOrdinates"
+        android:text="@string/share"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="42dp"
-        android:id="@+id/coordButton"
-        tools:ignore="HardcodedText" />
+        android:id="@+id/coordButton" />
 
     <Button
         android:text="@string/take_photo"
@@ -39,4 +28,14 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="31dp" />
+
+    <ImageView
+        android:layout_width="175dp"
+        android:layout_height="250dp"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:id="@+id/imageDisplay"
+        android:scaleType="fitXY"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="" />
 </RelativeLayout>

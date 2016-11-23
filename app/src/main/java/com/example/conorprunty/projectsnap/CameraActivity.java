@@ -6,6 +6,7 @@ import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
@@ -13,6 +14,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+
+import java.io.File;
+import java.io.FileOutputStream;
 
 public class CameraActivity extends AppCompatActivity {
 
@@ -40,9 +44,30 @@ public class CameraActivity extends AppCompatActivity {
         bSendCoords.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent iSMS = new Intent(Intent.ACTION_SENDTO, Uri.parse("smsto:"));
-                iSMS.putExtra("sms_body", "Hey, I took a great picture at "+xCoord+" "+yCoord);
-                startActivity(iSMS);
+
+                //http://stackoverflow.com/questions/21084866/how-to-share-image-of-imageview/21095826
+                ImageView imageBeingSent = (ImageView) findViewById(R.id.imageDisplay);
+
+                imageBeingSent.setDrawingCacheEnabled(true);
+
+                Bitmap bitmap = imageBeingSent.getDrawingCache();
+                File root = Environment.getExternalStorageDirectory();
+                File cachePath = new File(root.getAbsolutePath() + "/DCIM/Camera/image.jpg");
+                try {
+                    cachePath.createNewFile();
+                    FileOutputStream ostream = new FileOutputStream(cachePath);
+                    bitmap.compress(Bitmap.CompressFormat.JPEG, 100, ostream);
+                    ostream.close();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+
+
+                Intent iShare = new Intent(Intent.ACTION_SEND);
+                iShare.setType("image/*");
+                iShare.putExtra(Intent.EXTRA_TEXT, "Hey, I took this great picture at "+xCoord+" "+yCoord);
+                iShare.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(cachePath));
+                startActivity(Intent.createChooser(iShare, "Choose app to share photo with!"));
             }
         });
 
@@ -55,7 +80,7 @@ public class CameraActivity extends AppCompatActivity {
             Bundle extras = data.getExtras();
             Bitmap imageBitmap = (Bitmap) extras.get("data");
             ivThummbnail.setImageBitmap(imageBitmap);
-            MediaStore.Images.Media.insertImage(getContentResolver(), imageBitmap, "imageTitle" , "imageDesc");
+            MediaStore.Images.Media.insertImage(getContentResolver(), imageBitmap, "projectSnapImage!" , "Sent from Project Snap");
         }
     }
 

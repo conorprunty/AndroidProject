@@ -20,16 +20,6 @@
         android:layout_marginTop="38dp"
         android:id="@+id/getImages" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@mipmap/ic_launcher"
-        android:layout_below="@+id/getImages"
-        android:layout_marginTop="60dp"
-        android:id="@+id/imageView"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true" />
-
     <Button
         android:text="Share Image"
         android:layout_width="wrap_content"
@@ -38,6 +28,15 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="36dp"
         android:id="@+id/shareImage" />
+
+    <ImageView
+        android:layout_width="175dp"
+        android:layout_height="250dp"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:id="@+id/imageView"
+        android:scaleType="fitXY"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
 
 
 </RelativeLayout>
