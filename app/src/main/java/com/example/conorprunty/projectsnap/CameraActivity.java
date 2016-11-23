@@ -23,13 +23,14 @@ public class CameraActivity extends AppCompatActivity {
     static final int REQUEST_IMAGE_CAPTURE = 1;
     static final int MY_PERMISSIONS_REQUEST_CAMERA = 2;
     private ImageView ivThummbnail;
-    String xCoord = "1.543324W";
-    String yCoord = "-0.324234T";
+    String xCoord = "1234.8W";
+    String yCoord = "-43543T";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_camera);
+
         Button bCamera = (Button) findViewById(R.id.takePicture);
         ivThummbnail = (ImageView) findViewById(R.id.imageDisplay);
         bCamera.setOnClickListener(new View.OnClickListener() {
@@ -115,6 +116,4 @@ public class CameraActivity extends AppCompatActivity {
             }
         }
     }
-
-
 }
