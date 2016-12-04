@@ -71,8 +71,6 @@ public class GalleryActivity extends AppCompatActivity {
                 startActivity(Intent.createChooser(iShare, "Choose app to share photo with!"));
             }
         });
-
-
     }
 
 

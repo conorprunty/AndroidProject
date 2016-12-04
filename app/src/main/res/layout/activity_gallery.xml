@@ -9,34 +9,51 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#FFFFE0"
     tools:context="com.example.conorprunty.projectsnap.GalleryActivity">
 
-    <Button
-        android:text="@string/get_images"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="38dp"
-        android:id="@+id/getImages" />
-
-    <Button
-        android:text="Share Image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="36dp"
-        android:id="@+id/shareImage" />
-
     <ImageView
+        android:id="@+id/imageView"
         android:layout_width="175dp"
         android:layout_height="250dp"
-        app:srcCompat="@mipmap/ic_launcher"
-        android:id="@+id/imageView"
-        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
+        android:scaleType="fitXY"
+        app:srcCompat="@mipmap/imagepreview"
+        android:contentDescription=""
+        tools:ignore="ContentDescription" />
+
+    <Button
+        android:id="@+id/shareImage"
+        android:textColor="#FEFFFC"
+        android:textSize="30sp"
+        android:layout_width="198dp"
+        android:layout_height="77dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="-20"
+        android:shadowDy="-8"
+        android:shadowRadius="10"
+        android:text="@string/share_image"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/imageView"
         android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/getImages"
+        android:textColor="#FEFFFC"
+        android:textSize="30sp"
+        android:layout_width="198dp"
+        android:layout_height="77dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="-20"
+        android:shadowDy="-8"
+        android:shadowRadius="10"
+        android:text="@string/get_images"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/shareImage"
+        android:layout_marginTop="17dp" />
 
 
 </RelativeLayout>
