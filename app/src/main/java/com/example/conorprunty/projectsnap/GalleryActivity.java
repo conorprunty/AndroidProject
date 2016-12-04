@@ -23,11 +23,8 @@ public class GalleryActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gallery);
-
         Button getImage = (Button) findViewById(R.id.getImages);
         Button shareTheImage = (Button) findViewById(R.id.shareImage);
-
-
         getImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -43,12 +40,9 @@ public class GalleryActivity extends AppCompatActivity {
         shareTheImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 //http://stackoverflow.com/questions/21084866/how-to-share-image-of-imageview/21095826
                 ImageView imageBeingSent = (ImageView) findViewById(R.id.imageView);
-
                 imageBeingSent.setDrawingCacheEnabled(true);
-
                 Bitmap bitmap = imageBeingSent.getDrawingCache();
                 File root = Environment.getExternalStorageDirectory();
                 File cachePath = new File(root.getAbsolutePath() + "/DCIM/Camera/image.jpg");
@@ -61,8 +55,6 @@ public class GalleryActivity extends AppCompatActivity {
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
-
-
                 Intent iShare = new Intent(Intent.ACTION_SEND);
                 iShare.setType("image/*");
                 //iShare.putExtra(Intent.EXTRA_TEXT, "Hello");
@@ -73,16 +65,12 @@ public class GalleryActivity extends AppCompatActivity {
         });
     }
 
-
     //http://codetheory.in/android-pick-select-image-from-gallery-with-intents/
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-
         if (requestCode == PICK_IMAGE_REQUEST && resultCode == RESULT_OK && data != null && data.getData() != null) {
-
             Uri uri = data.getData();
-
             try {
                 Bitmap bitmap = MediaStore.Images.Media.getBitmap(getContentResolver(), uri);
                 ImageView imageView = (ImageView) findViewById(R.id.imageView);

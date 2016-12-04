@@ -3,10 +3,10 @@
     <string name="take_photo">Take Photo</string>
     <string name="get_images">Get Images</string>
     <string name="share">Share!</string>
-    <string name="project_snap">PROJECT SNAP!</string>
+    <string name="project_snap">PROJECT SNAP</string>
     <string name="camera">CAMERA</string>
     <string name="gallery">GALLERY</string>
-    <string name="or_choose_from_one_your_existing_photos">Or choose from one your existing photos!</string>
+    <string name="or_choose_from_one_your_existing_photos">Or choose from one of your existing photos:</string>
     <string name="take_a_photo_now_and_share_its_location_with_your_friends">Take a photo now and share its location with your friends!</string>
     <string name="share_image">Share!</string>
 </resources>

@@ -4,83 +4,81 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFF99"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="#FFFFE0"
     tools:context="com.example.conorprunty.projectsnap.MainActivity">
 
     <TextView
-        android:text="@string/project_snap"
+        android:id="@+id/projectSnapHeader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="false"
-        android:layout_marginTop="10dp"
-        android:id="@+id/projectSnapHeader"
-        android:gravity="center"
-        android:textStyle="bold"
-        android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/project_snap"
         android:textSize="36sp"
-        android:layout_centerHorizontal="true" />
+        android:textStyle="bold" />
 
     <Button
-        android:text="@string/gallery"
         android:id="@+id/galleryButton"
-        android:textColor="#FEFFFC"
-        android:textSize="30sp"
         android:layout_width="198dp"
         android:layout_height="77dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/cameraButton"
+        android:layout_marginBottom="35dp"
         android:background="@drawable/buttonshape"
         android:shadowColor="#A8A8A8"
         android:shadowDx="-20"
         android:shadowDy="-8"
-        android:shadowRadius="10"
-        android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/cameraButton"
-        android:layout_marginBottom="35dp" />
+        android:text="@string/gallery"
+        android:textColor="#FEFFFC"
+        android:textSize="30sp" />
 
     <TextView
-        android:text="@string/take_a_photo_now_and_share_its_location_with_your_friends"
+        android:id="@+id/cameraText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/cameraText"
-        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/projectSnapHeader"
+        android:layout_marginTop="35dp"
         android:padding="15dp"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        android:layout_below="@+id/projectSnapHeader"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="35dp" />
+        android:text="@string/take_a_photo_now_and_share_its_location_with_your_friends"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
 
     <Button
         android:id="@+id/cameraButton"
-        android:text="@string/camera"
-        android:textColor="#FEFFFC"
-        android:textSize="30sp"
         android:layout_width="198dp"
         android:layout_height="77dp"
+        android:layout_below="@+id/cameraText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
         android:background="@drawable/buttonshape"
         android:shadowColor="#A8A8A8"
         android:shadowDx="-20"
         android:shadowDy="-8"
-        android:shadowRadius="10"
-        android:layout_marginTop="14dp"
-        android:layout_below="@+id/cameraText"
-        android:layout_centerHorizontal="true" />
+        android:text="@string/camera"
+        android:textColor="#FEFFFC"
+        android:textSize="30sp" />
 
     <TextView
-        android:text="@string/or_choose_from_one_your_existing_photos"
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textView2"
-        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/cameraButton"
+        android:layout_marginTop="20dp"
         android:padding="15dp"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        android:layout_below="@+id/cameraButton"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="20dp" />
+        android:text="@string/or_choose_from_one_your_existing_photos"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
 
 </RelativeLayout>
