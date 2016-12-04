@@ -3,48 +3,12 @@
 
     <item
         is-multidex="false"
-        jar="/Users/conorprunty/Documents/4th year/Mobile App Dev/Code from moodle/ProjectSnap/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/9.6.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.2"
-        sha1="62ff84124b89177abc0c27f3e38c9732f2d41617">
-        <dex dex="/Users/conorprunty/Documents/4th year/Mobile App Dev/Code from moodle/ProjectSnap/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-maps-9.6.1_1c199daa64329c49b9f62fc435308e42b0263d98.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/Users/conorprunty/Documents/4th year/Mobile App Dev/Code from moodle/ProjectSnap/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="24.0.2"
         sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
         <dex dex="/Users/conorprunty/Documents/4th year/Mobile App Dev/Code from moodle/ProjectSnap/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-24.2.1_e12608d72474519b8f0b0508f66511a8886eac20.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/conorprunty/Documents/4th year/Mobile App Dev/Code from moodle/ProjectSnap/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.2"
-        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
-        <dex dex="/Users/conorprunty/Documents/4th year/Mobile App Dev/Code from moodle/ProjectSnap/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-24.2.1_d50808b44bd0e6f634a6bc6fe4c67c30067cf2d1.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/conorprunty/Documents/4th year/Mobile App Dev/Code from moodle/ProjectSnap/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.6.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.2"
-        sha1="4a36600281a648769411ef642c331851732bf29e">
-        <dex dex="/Users/conorprunty/Documents/4th year/Mobile App Dev/Code from moodle/ProjectSnap/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tasks-9.6.1_11d2c9e92cd8fc4d81c4b93ae70484b339164b45.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/conorprunty/Documents/4th year/Mobile App Dev/Code from moodle/ProjectSnap/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.6.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.2"
-        sha1="eccaaa9ffa6bb4bfbd2e870f01aaf69655d353be">
-        <dex dex="/Users/conorprunty/Documents/4th year/Mobile App Dev/Code from moodle/ProjectSnap/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-9.6.1_584f15418a695839dd8398bcd4770ef48628e2bb.jar" />
     </item>
     <item
         is-multidex="false"
@@ -66,12 +30,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/conorprunty/Documents/4th year/Mobile App Dev/Code from moodle/ProjectSnap/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/jars/classes.jar"
+        jar="/Users/conorprunty/Documents/4th year/Mobile App Dev/Code from moodle/ProjectSnap/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.0.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="24.0.2"
-        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
-        <dex dex="/Users/conorprunty/Documents/4th year/Mobile App Dev/Code from moodle/ProjectSnap/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-24.2.1_0c53a0cc2733eea136e7211284560c9063e580b5.jar" />
+        sha1="25438f55fc6d906a0e72f30b21487541430ede43">
+        <dex dex="/Users/conorprunty/Documents/4th year/Mobile App Dev/Code from moodle/ProjectSnap/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-10.0.1_ad1c16bf011a11fc64e42e0b11ec2c74fe83655d.jar" />
     </item>
     <item
         is-multidex="false"
@@ -84,12 +48,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/conorprunty/Documents/4th year/Mobile App Dev/Code from moodle/ProjectSnap/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jar="/Users/conorprunty/Documents/4th year/Mobile App Dev/Code from moodle/ProjectSnap/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/10.0.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="24.0.2"
-        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
-        <dex dex="/Users/conorprunty/Documents/4th year/Mobile App Dev/Code from moodle/ProjectSnap/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_40a377c9c3622334a604249871da8cb8bf283e27.jar" />
+        sha1="6addaba208e21c6da776d0ca75b6b23a6ccd5499">
+        <dex dex="/Users/conorprunty/Documents/4th year/Mobile App Dev/Code from moodle/ProjectSnap/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tasks-10.0.1_9e55a5c61112359b28afc2e2252afcd797d05f4a.jar" />
     </item>
     <item
         is-multidex="false"
@@ -102,12 +66,57 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/conorprunty/Documents/4th year/Mobile App Dev/Code from moodle/ProjectSnap/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/jars/classes.jar"
+        jar="/Users/conorprunty/Documents/4th year/Mobile App Dev/Code from moodle/ProjectSnap/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/10.0.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="24.0.2"
-        sha1="af7582c6b327449c6d32518e6a10307860b7b5d6">
-        <dex dex="/Users/conorprunty/Documents/4th year/Mobile App Dev/Code from moodle/ProjectSnap/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-9.6.1_d0a1b57f31425d17b83b37db2056268c431e9e48.jar" />
+        sha1="44a694d4095be84c2888764b1f7256b385c030ad">
+        <dex dex="/Users/conorprunty/Documents/4th year/Mobile App Dev/Code from moodle/ProjectSnap/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-location-10.0.1_420f47df5ec67ec9850fe9dd490da5bd6f08398d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/conorprunty/Documents/4th year/Mobile App Dev/Code from moodle/ProjectSnap/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="/Users/conorprunty/Documents/4th year/Mobile App Dev/Code from moodle/ProjectSnap/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-24.2.1_d1f36bc37ad323494a1a5b1d0ebc23f1e80f646e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/conorprunty/Documents/4th year/Mobile App Dev/Code from moodle/ProjectSnap/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="/Users/conorprunty/Documents/4th year/Mobile App Dev/Code from moodle/ProjectSnap/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-24.2.1_d50808b44bd0e6f634a6bc6fe4c67c30067cf2d1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/conorprunty/Documents/4th year/Mobile App Dev/Code from moodle/ProjectSnap/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="/Users/conorprunty/Documents/4th year/Mobile App Dev/Code from moodle/ProjectSnap/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-24.2.1_0c53a0cc2733eea136e7211284560c9063e580b5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/conorprunty/Documents/4th year/Mobile App Dev/Code from moodle/ProjectSnap/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="/Users/conorprunty/Documents/4th year/Mobile App Dev/Code from moodle/ProjectSnap/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_40a377c9c3622334a604249871da8cb8bf283e27.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/conorprunty/Documents/4th year/Mobile App Dev/Code from moodle/ProjectSnap/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/10.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="27777b3cad3c20b1acab19f6e37fe3e03371bf6e">
+        <dex dex="/Users/conorprunty/Documents/4th year/Mobile App Dev/Code from moodle/ProjectSnap/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-maps-10.0.1_8816f85bf98b7726393d350a05a75519dd416484.jar" />
     </item>
     <item
         is-multidex="false"
@@ -156,21 +165,21 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/conorprunty/Documents/4th year/Mobile App Dev/Code from moodle/ProjectSnap/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.2"
-        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
-        <dex dex="/Users/conorprunty/Documents/4th year/Mobile App Dev/Code from moodle/ProjectSnap/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-24.2.1_d1f36bc37ad323494a1a5b1d0ebc23f1e80f646e.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/Users/conorprunty/Documents/4th year/Mobile App Dev/Code from moodle/ProjectSnap/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="24.0.2"
         sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
         <dex dex="/Users/conorprunty/Documents/4th year/Mobile App Dev/Code from moodle/ProjectSnap/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-24.2.1_b1750fc54160956def5c56fd5c4a4ba4bf0a69f6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/conorprunty/Documents/4th year/Mobile App Dev/Code from moodle/ProjectSnap/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/10.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="756f6297eef79784f5e356dcd4f39865028b2bd0">
+        <dex dex="/Users/conorprunty/Documents/4th year/Mobile App Dev/Code from moodle/ProjectSnap/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-10.0.1_f72eb96f662695b07966cd403b1c0f6e9b525645.jar" />
     </item>
 
 </items>

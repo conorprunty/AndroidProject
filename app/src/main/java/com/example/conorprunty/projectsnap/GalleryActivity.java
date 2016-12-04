@@ -33,7 +33,9 @@ public class GalleryActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent();
                 intent.setType("image/*");
+                //implicit intent
                 intent.setAction(Intent.ACTION_GET_CONTENT);
+                //allows user to get image from their device
                 startActivityForResult(Intent.createChooser(intent, "Select Picture"), PICK_IMAGE_REQUEST);
             }
         });
@@ -53,6 +55,7 @@ public class GalleryActivity extends AppCompatActivity {
                 try {
                     cachePath.createNewFile();
                     FileOutputStream ostream = new FileOutputStream(cachePath);
+                    //same as the camera activity, need to compress the image
                     bitmap.compress(Bitmap.CompressFormat.JPEG, 100, ostream);
                     ostream.close();
                 } catch (Exception e) {
@@ -64,14 +67,13 @@ public class GalleryActivity extends AppCompatActivity {
                 iShare.setType("image/*");
                 //iShare.putExtra(Intent.EXTRA_TEXT, "Hello");
                 iShare.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(cachePath));
+                //share the image chosen from gallery
                 startActivity(Intent.createChooser(iShare, "Choose app to share photo with!"));
             }
         });
 
 
     }
-
-
 
 
     //http://codetheory.in/android-pick-select-image-from-gallery-with-intents/
@@ -86,6 +88,7 @@ public class GalleryActivity extends AppCompatActivity {
             try {
                 Bitmap bitmap = MediaStore.Images.Media.getBitmap(getContentResolver(), uri);
                 ImageView imageView = (ImageView) findViewById(R.id.imageView);
+                //setting the image on the page
                 imageView.setImageBitmap(bitmap);
             } catch (IOException e) {
                 e.printStackTrace();
