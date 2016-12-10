@@ -33,6 +33,8 @@ public class CameraActivity extends AppCompatActivity implements GoogleApiClient
     static final int MY_PERMISSIONS_REQUEST_CAMERA = 2;
     static final int MY_PERMISSIONS_REQUEST_ACCESS_FINE_LOCATION = 3;
     private ImageView ivThummbnail;
+    //The location doesn't work - even though I think I have all of the code?
+    //Had to hard code in the GPS co-ordinates here for display purposes
     String xCoord = "53.3506500";
     String yCoord = "-6.2536200";
     private GoogleApiClient mGoogleApiClient;
@@ -182,6 +184,7 @@ public class CameraActivity extends AppCompatActivity implements GoogleApiClient
     @Override
     public void onLocationChanged(Location location) {
         myLocation = location;
+        //toast the location
         Toast.makeText(getApplicationContext(), "Latitude: " + location.getLatitude() + " Longitude: " + location.getLongitude(), Toast.LENGTH_LONG).show();
     }
 }

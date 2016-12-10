@@ -13,12 +13,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //instantiate database class
         DBHandler db = new DBHandler(this);
+        //add a board
+        db.addRating(new Rating(3, "5.0", "5.0"));
 
-        db.addBoard(new Rating(5, "5.0", "5.0"));
-
-        final Rating highestRating = db.getBoard(5);
+        final Rating highestRating = db.getRating(3);
         TextView ratingView = (TextView) findViewById(R.id.highestRating);
+        //print the rating
         ratingView.setText("Highest photo rating this week is: " + highestRating.getTotal() + "!");
         //button to open camera page
         Button goToCamera = (Button) findViewById(R.id.cameraButton);
