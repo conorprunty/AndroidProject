@@ -57,7 +57,7 @@ public class DBHandler extends SQLiteOpenHelper {
         db.close(); // Closing database connection
     }
 
-    // Getting one board
+    // Getting one rating
     public Rating getRating(int id) {
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.query(TABLE_RATINGS, new String[]{KEY_ID,
